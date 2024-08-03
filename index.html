@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المخزون</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>إدارة المخزون</h1>
+    <form id="transaction-form">
+        <input type="number" id="quantity" placeholder="أدخل الكمية" required>
+        <input type="number" id="price" placeholder="أدخل السعر" required>
+        <button type="button" id="add-purchase">إضافة شراء</button>
+        <button type="button" id="add-sale">إضافة بيع</button>
+    </form>
+    <table id="inventory-table">
+        <thead>
+            <tr>
+                <th>النوع</th>
+                <th>الكمية</th>
+                <th>السعر</th>
+                <th>الإجمالي</th>
+                <th>الربح</th>
+                <th>متوسط السعر</th>
+                <th>المخزون</th>
+                <th>التعليق</th>
+                <th>الكمية المتبقية</th>
+                <th>تعديل</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added dynamically here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
