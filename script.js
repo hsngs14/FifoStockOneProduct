@@ -1,5 +1,3 @@
-// script.js
-
 let transactions = [];
 let purchases = [];
 let purchaseTrack = {}; // Track remaining quantities for each purchase
