@@ -1,33 +1,36 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إدارة المخزون</title>
+    <title>Inventory Management</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>إدارة المخزون</h1>
+    <h1>Inventory Management</h1>
     <form id="transaction-form">
-        <input type="number" id="quantity" placeholder="أدخل الكمية" required>
-        <input type="number" id="price" placeholder="أدخل السعر" required>
-        <button type="button" id="add-purchase">إضافة شراء</button>
-        <button type="button" id="add-sale">إضافة بيع</button>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+        <label for="price">Price:</label>
+        <input type="number" id="price" required>
+        <button type="button" id="add-purchase">Add Purchase</button>
+        <button type="button" id="add-sale">Add Sale</button>
     </form>
-    <button id="print-button">طباعة</button> <!-- Add this button -->
     <table id="inventory-table">
         <thead>
             <tr>
-                <th>النوع</th>
-                <th>الكمية</th>
-                <th>السعر</th>
-                <th>الإجمالي</th>
-                <th>الربح</th>
-                <th>متوسط السعر</th>
-                <th>المخزون</th>
-                <th>التعليق</th>
-                <th>الكمية المتبقية</th>
-                <th>تعديل</th>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Benefit</th>
+                <th>Avg. Price</th>
+                <th>Stock</th>
+                <th>Comment</th>
+                <th>Remaining</th>
+                <th>Edit</th>
             </tr>
         </thead>
         <tbody>
